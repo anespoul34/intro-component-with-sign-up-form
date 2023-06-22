@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![header](https://github.com/anespoul34/intro-component-with-signup-form/blob/main/images/screenshot.png)
+![header](https://github.com/anespoul34/intro-component-with-sign-up-form/blob/main/images/screenshot.png)
 
 ### Links
 
