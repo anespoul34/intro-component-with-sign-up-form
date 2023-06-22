@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  --font: 'Poppins', sans-serif;
+  --f-size: 16px;
+  --primary: hsl(0, 100%, 74%);
+  --secondary: hsl(154, 59%, 51%);
+  --white: hsl(0, 0%, 100%);
+  --light:  hsl(246, 25%, 77%);
+  --medium: hsl(248, 32%, 49%);
+  --dark:  hsl(249, 10%, 26%);
+  --black: hsl(0, 0%, 8%);
+  font-size: var(--f-size);
+}
+* {
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+html {
+  background-color: var(--primary);
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: url('/bg-intro-mobile.6030d29e.png');
+  background-size: cover;
+  overflow-y: auto;
+  padding: 60px 30px 10px 30px;
+}
+h1, span, p, b, i, button, input {
+  font-family: var(--font);
+  margin: 0;
+}
+h1 {
+  font-size: 1.8rem;
+  color: var(--white);
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+  margin-bottom: 30px;
+}
+p {
+  font-size: 1rem;
+  color: var(--white);
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: center;
+}
+b, span {
+  font-size: 1rem;
+  color: var(--white);
+  line-height: 1.5;
+}
+b {
+  font-weight: 700;
+}
+span {
+  font-weight: 300;
+}
+i {
+  color: var(--primary);
+  font-size: 0.8rem;
+  text-align: right;
+}
+.attribution {
+  width: 100%;
+  font-family: var(--font);
+  color: var(--black);
+  text-align: center;
+  font-size: 1rem;
+  margin: 10px 0;
+  z-index: 1;
+}
+.attribution a {
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--secondary);
+}
+.field .error {
+  display: none;
+}
+.field.error .error {
+  display: block;
+}
+.field.error input {
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+.field.error img.error {
+  position: absolute;
+  top: 25px;
+  right: 10px;
+  transform: translateY(-50%);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 60px;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+}
+.right header {
+  width: 100%;
+  background: var(--medium);
+  border-radius: 10px;
+  padding: 20px 50px;
+  text-align: center;
+  box-shadow: 0 8px 0 0 hsla(249, 10%, 26%, 0.3);
+}
+.right form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  background: var(--white);
+  border-radius: 10px;
+  padding: 30px;
+}
+.right form .field {
+  height: 50px;
+  position: relative;
+  width: 100%;
+}
+.right form input {
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  color: var(--dark);
+  font-weight: 600;
+}
+.right form input:focus {
+  caret-color: var(--light);
+  border: 1px solid var(--light);
+}
+.right form button {
+  cursor: pointer;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+  border-radius: 5px;
+  border: none;
+  background: var(--secondary);
+  box-shadow: 0 3px 0 0 hsl(154, 100%, 32%);
+}
+.right form button:hover {
+  background: hsl(154, 87%, 70%);
+  box-shadow: 0 3px 0 0 hsl(154, 58%, 47%);
+}
+.right form .legal {
+  color: rgb(182, 182, 182);
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1.8;
+}
+.right form .legal a {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+@media screen and (width > 768px) {
+  body {
+    justify-content: center;
+    background: url('/bg-intro-desktop.62667658.png');
+    background-size: contain;
+  }
+  main {
+    max-width: 1200px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .right,
+  .left {
+    width: 50%;
+  }
+  .left {
+    padding-right: 40px;
+  }
+  .left h1 {
+    font-size: 3rem;
+    line-height: 1.1;
+    text-align: left;
+  }
+  .left p {
+    text-align: left;
+  }
+  .attribution {
+    position: absolute;
+    bottom: 10px;
+  }
+}
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
