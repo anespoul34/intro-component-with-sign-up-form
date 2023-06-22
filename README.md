@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: link
-- Live Site URL: link
+- Solution URL: [link](https://www.frontendmentor.io/solutions/component-using-html-css-js-4OKUDMnNKB)
+- Live Site URL: [link](https://intro-component-with-sign-up-form-brown.vercel.app/)
 
 ## My process
 
